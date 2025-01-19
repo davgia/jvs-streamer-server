@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <PreferenceCategory android:title="@string/settingsServer" >
+        <EditTextPreference
+            android:defaultValue="5540"
+            android:key="rtsp_port"
+            android:summary="@string/settingsStreaming_rtspUrl_summary"
+            android:title="@string/settingsStreaming_rtspUrl_title" />
+
+    </PreferenceCategory>
+     
+    <PreferenceCategory android:title="@string/settingsRecord" >
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="capture_screen"
+            android:summary="Choose to capture display instead of camera"
+            android:title="Capture Display" />
+
+        <ListPreference
+            android:entries="@array/videoCodecArray"
+            android:entryValues="@array/videoCodecValues"
+            android:defaultValue="@string/settingsDefaultVideoCodec"
+            android:key="videoCodec"
+            android:summary="@string/settingsRecord_videoCodec_summary"
+            android:title="@string/settingsRecord_videoCodec_title" />
+
+          <ListPreference
+            android:entries="@array/videoResArray"
+            android:entryValues="@array/videoResValues"
+            android:defaultValue="640"
+            android:key="videoRes"
+            android:summary="@string/settingsRecord_videoRes_summary"
+            android:title="@string/settingsRecord_videoRes_title" />
+
+         <ListPreference
+            android:entries="@array/videoHRVBitrateArray"
+            android:entryValues="@array/videoHRVBitrateValues"
+            android:defaultValue="700"
+            android:key="videoBitrate"
+            android:summary="@string/settingsRecord_HRVbitrate_summary"
+            android:title="@string/settingsRecord_HRVbitrate_title" />
+
+        <ListPreference
+            android:entries="@array/videoFpsArray"
+            android:entryValues="@array/videoFpsValues"
+            android:defaultValue="30"
+            android:key="videoFps"
+            android:summary="@string/settingsRecord_videoFps_summary"
+            android:title="@string/settingsRecord_videoFps_title" />
+            
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="audio_enable"
+            android:summary="@string/settingsRecord_audioEnable_summary"
+            android:title="@string/settingsRecord_audioEnable_title" />
+
+        <ListPreference
+            android:entries="@array/audioCodecArray"
+            android:entryValues="@array/audioCodecValues"
+            android:defaultValue="@string/settingsDefaultAudioCodec"
+            android:key="audioCodec"
+            android:summary="@string/settingsRecord_audioCodec_summary"
+            android:title="@string/settingsRecord_audioCodec_title" />
+
+        <ListPreference
+            android:entries="@array/audioBitrateArray"
+            android:entryValues="@array/audioBitrateValues"
+            android:defaultValue="64"
+            android:key="audioBitrate"
+            android:summary="@string/settingsRecord_audioBitrate_summary"
+            android:title="@string/settingsRecord_audioBitrate_title" />
+
+        <ListPreference
+            android:entries="@array/audioSamplingArray"
+            android:entryValues="@array/audioSamplingValues"
+            android:defaultValue="44100"
+            android:key="audioSampling"
+            android:summary="@string/settingsRecord_audioSampling_summary"
+            android:title="@string/settingsRecord_audioSampling_title" />
+
+        <ListPreference
+            android:entries="@array/audioChannelArray"
+            android:entryValues="@array/audioChannelValues"
+            android:defaultValue="2"
+            android:key="audioChannels"
+            android:summary="@string/settingsRecord_audioChannel_summary"
+            android:title="@string/settingsRecord_audioChannel_title" />
+
+         <!--<CheckBoxPreference-->
+            <!--android:defaultValue="false"-->
+            <!--android:key="transcode_enable"-->
+            <!--android:summary="@string/settingsTranscode_enable_summary"-->
+            <!--android:title="@string/settingsTranscode_enable_title" />-->
+
+     </PreferenceCategory>
+
+    <PreferenceCategory android:title="JVS Settings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="jvsEnable"
+            android:summary="@string/settingsJVS_enable_send_summary"
+            android:title="@string/settingsJVS_enable_send_title" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:entries="@array/jvsTypeArray"
+            android:entryValues="@array/jvsTypeValues"
+            android:defaultValue="0"
+            android:key="jvsType"
+            android:summary="@string/settingsJVS_enable_send_type_summary"
+            android:title="@string/settingsJVS_enable_send_type_title" />
+
+        <EditTextPreference
+            android:hint="server address"
+            android:key="jvsAddress"
+            android:summary="@string/settingsJVS_server_address_summary"
+            android:title="@string/settingsJVS_server_address_title" />
+
+        <EditTextPreference
+            android:hint="server port"
+            android:key="jvsPort"
+            android:summary="@string/settingsJVS_server_port_summary"
+            android:title="@string/settingsJVS_server_port_title" />
+
+</PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settingsCommon" >
+            <PreferenceScreen
+            android:defaultValue="true"
+            android:key="reset_settings"
+            android:summary="@string/settingsCommon_set_summary"
+            android:title="@string/settingsCommon_set_title" />
+     </PreferenceCategory>
+</PreferenceScreen>

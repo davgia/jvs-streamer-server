@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JVS Streamer (Server)</string>
+    <string name="app_short_name">Streamer (Server)</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="menu_exit">Exit</string>
+    
+    <string name="settings_activity_title">Settings</string>
+
+    <string name="settingsGeneral">General</string>
+    <string name="settingsServer">RTSP settings</string>
+
+    <string name="settingsRecord">Streaming settings</string>
+
+    <string name="settingsRecord_HRVbitrate_title">Video bitrate (kbps)</string>
+    <string name="settingsRecord_HRVbitrate_summary">The video bitrate in kbps</string>
+    
+    <string name="settingsRecord_videoRes_title">Video resolution</string>
+    <string name="settingsRecord_videoRes_summary">The video resolution</string>
+
+    <string name="settingsRecord_videoFps_title">Video framerate</string>
+    <string name="settingsRecord_videoFps_summary">The video framerate</string>
+    
+    <string name="settingsRecord_secvideo_enable_title">"Secondary Video (/ch1)"</string>
+    <string name="settingsRecord_secvideo_enable_summary">RTSP mode only</string>
+    
+    <string name="settingsRecord_LRVbitrate_title">Video bitrate (kbps)</string>
+    <string name="settingsRecord_LRVbitrate_summary">The video bitrate in kbps</string>
+    
+    <string name="settingsRecord_IMGquality_summary">The image quality of the video</string>
+    <string name="settingsRecord_IMGquality_title">Image quality (0 to 100)</string>
+    <string name="settingsRecord_LRVDuration_summary">""</string>
+    <string name="settingsRecord_LRVDuration_title">Chunk duration (seconds) min 10, max 1200</string>
+
+    <string name="settingsRecord_audioEnable_summary">Choose whether to record and send audio</string>
+    <string name="settingsRecord_audioEnable_title">Enable audio</string>
+    <string name="settingsRecord_audioBitrate_summary">The audio bitrate in kbps</string>
+    <string name="settingsRecord_audioBitrate_title">Audio bitrate (kbps)</string>
+    <string name="settingsRecord_audioChannel_summary">The audio channels </string>
+    <string name="settingsRecord_audioChannel_title">Audio channels (stereo/mono)</string>
+    <string name="settingsRecord_audioSampling_summary">The audio sampling rate</string>
+    <string name="settingsRecord_audioSampling_title">Audio sampling rate (kHz)</string>
+
+    <string name="settingsStreaming">Streaming settings</string>
+    <string name="settingsStreaming_rtspUrl_summary">Port used to stream RTSP data</string>
+    <string name="settingsStreaming_rtspUrl_title">RTSP server port</string>
+
+    <string name="settingsJVS">JVS Server Settings</string>
+    <string name="settingsJVS_enable_send_summary">Sends a new stream request to the JVS server</string>
+    <string name="settingsJVS_enable_send_title">Enable JVS Streaming</string>
+    <string name="settingsJVS_enable_send_type_summary">The dashing type for the server</string>
+    <string name="settingsJVS_enable_send_type_title">Server Encoding Type</string>
+    <string name="settingsJVS_server_port_summary">The listening port of the server</string>
+    <string name="settingsJVS_server_port_title">Server Port</string>
+    <string name="settingsJVS_server_address_summary">The remote address of the server</string>
+    <string name="settingsJVS_server_address_title">Server Address</string>
+
+    <string name="settingsCommon">Defaults</string>
+    <string name="settingsCommon_set_summary">Reset to default settings</string>
+    <string name="settingsCommon_set_title">Reset to defaults</string>
+    <string name="settingsCommon_server_summary">""</string>
+    <string name="settingsCommon_server_title">Reset server parameters</string>
+    <string name="settingsCommon_storage_summary">""</string>
+    <string name="settingsCommon_storage_title">Reset storage parameters</string>
+    <string name="settingsCommon_record_summary">""</string>
+    <string name="settingsCommon_record_title">Reset record parameters</string>
+    <string name="settingsCommon_streaming_summary">""</string>
+    <string name="settingsCommon_streaming_title">Reset streaming parameters</string>
+    
+    <string name="settingsTranscode_enable_title">Transcode</string>
+    <string name="settingsTranscode_enable_summary">transcode input data or send raw</string>
+
+    <string name="settingsDefaultVideoCodec">video/avc</string>
+    <string name="settingsRecord_videoCodec_summary">Video codec</string>
+    <string name="settingsRecord_videoCodec_title">Video codec</string>
+
+    <string name="settingsDefaultAudioCodec">audio/mp4a-latm</string>
+    <string name="settingsRecord_audioCodec_summary">Audio codec</string>
+    <string name="settingsRecord_audioCodec_title">Audio codec</string>
+</resources>
+
